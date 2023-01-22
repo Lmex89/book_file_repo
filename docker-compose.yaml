@@ -20,7 +20,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - 8001:8000
+      - 8002:8000
     environment:
       - DJANGO_SETTINGS_MODULE=bookproject.settings
       - POSTGRES_NAME=postgres
