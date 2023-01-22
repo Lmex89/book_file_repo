@@ -165,3 +165,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL='uploads/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'uploads')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS=['*']
