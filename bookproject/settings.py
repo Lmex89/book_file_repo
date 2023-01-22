@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5s0*yr91%7n3ri7#(zt!qtvecet79fg#dn^vt(1h-zdam4bb8@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -163,5 +163,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 MEDIA_URL='uploads'
-MEDIA_ROOT=s.path.join(BASE_DIR, 'uploads')
+MEDIA_ROOT=os.path.join(BASE_DIR, 'uploads')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
