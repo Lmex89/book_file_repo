@@ -32,7 +32,7 @@ class Author(BaseModel):
 class ImgPortada(BaseModel):
     id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4)
     portada = models.ImageField(upload_to='book/portada', blank=True, null=True)
-    title = models.CharField(max_length=250, null=False)
+    title = models.CharField(max_length=250, null=False, default="test")
     category = models.ForeignKey(Categorias, null=True, on_delete=models.SET_NULL)
 
 class Book(BaseModel):
