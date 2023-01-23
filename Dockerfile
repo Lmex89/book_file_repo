@@ -23,4 +23,4 @@ RUN apt-get update && apt-get upgrade -y && apt-get install postgresql-client gc
 RUN  pip install --upgrade pip && pip install -r requirements.txt  
 COPY . /code
 RUN ["chmod", "+x", "docker-entrypoint.sh"]
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["bash","/docker-entrypoint.sh"]
