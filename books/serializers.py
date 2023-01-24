@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import ImgPortada
+from .models import ImgPortada
 
 class ImgPortadaSerializer(serializers.ModelSerializer):
 

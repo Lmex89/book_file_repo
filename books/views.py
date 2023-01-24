@@ -1,8 +1,8 @@
 from rest_framework import generics, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from models import ImgPortada
-from serializers import ImgPortadaSerializer
+from .models import ImgPortada
+from .serializers import ImgPortadaSerializer
 
 class ImgPortadaView(generics.RetrieveAPIView):
     queryset = ImgPortada.objects.all()
