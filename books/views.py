@@ -7,7 +7,7 @@ from .serializers import ImgPortadaSerializer
 class ImgPortadaView(generics.RetrieveAPIView):
     queryset = ImgPortada.objects.all()
     serializer_class = ImgPortadaSerializer
-    #permission_classes = [IsAuthenticated]
+    permission_classes = (IsAuthenticated,)
 
     def get(self, request, *args, **kwargs):
         return super().get(request, *args, **kwargs)
